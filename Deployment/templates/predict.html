@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Churn Prediction System</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/predict.css" />
+  </head>
+  <body>
+    <nav>
+      <label>Churn Prediction System</label>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+          <a href="/predict">Predict</a>
+          <a href="/contact">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h3>Welcome to Churn Prediction System</h3>
+    </div>
+
+    <center>
+      <div class="login-box">
+        <h2>INPUTS</h2>
+        <form action="/output" method="POST">
+          <div class="user-box">
+            <label>Age</label>
+            <input
+              type="number"
+              placeholder="Enter Your Pesent Age"
+              name="age"
+              id="age"
+              step="1"
+              required
+            />
+          </div>
+
+          <div class="user-box">
+            <label>Gender</label>
+            <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div class="user-box">
+            <label>Contract Type</label>
+            <select name="contract-type" id="contract-type">
+              <option value="month">Month-To-Month</option>
+              <option value="one-year">One Year</option>
+              <option value="two-year">Two Year</option>
+            </select>
+          </div>
+
+          <div class="user-box">
+            <label>Monthly Charges</label>
+            <input
+              type="number"
+              placeholder="Enter Monthly Charges"
+              name="monthly-charges"
+              id="monthly-charges"
+              required
+            />
+          </div>
+
+          <div class="user-box">
+            <label>Total Charges</label>
+            <input
+              type="number"
+              id="total-charges"
+              placeholder="Enter Total Charges"
+              name="total-charges"
+              required
+            />
+          </div>
+
+          <div class="user-box">
+            <label>Tech Support</label>
+            <select name="tech-support" id="tech-support">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="user-box">
+            <label>Internet Sevice</label>
+            <select name="internet-sevice" id="internet-service">
+              <option value="dsl">DSL</option>
+              <option value="fiber">Fiber Optic</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="user-box">
+            <label>Tenure</label>
+            <input
+              type="number"
+              id="tenure"
+              placeholder="Enter Tenure"
+              name="tenure"
+              required
+            />
+          </div>
+
+          <div class="user-box">
+            <label>Paperless Billing</label>
+            <select name="paperless" id="paperless">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="user-box">
+            <label>Payment Method</label>
+            <select name="payment-method" id="payment-method">
+              <option value="imps">IMPS/NEFT</option>
+              <option value="upi">UPI</option>
+              <option value="card">Card</option>
+            </select>
+          </div>
+
+          <div class="user-box">
+            <label>Churn</label>
+            <select name="churn" id="churn">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <a>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            round off upto 3 decimals like 3=3.000, 3.1425=3.143, 2.1423=3.142,
+            0=0.000
+          </a>
+          <a href="/output">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <button
+              type="submit"
+              style="
+                background: none;
+                border: none;
+                color: aqua;
+                font-size: 20px;
+              "
+            >
+              SUBMIT
+            </button>
+          </a>
+        </form>
+      </div>
+    </center>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
